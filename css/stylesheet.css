@@ -8,10 +8,30 @@ h1 {
 }
 
 h2 {
-    font-size: 30px; 
+    font-size: 35px; 
     font-family: monospace; 
     color: black; 
     text-align: center;
+}
+
+.one {
+    font-size: 25px; 
+    font-family: monospace; 
+    color: black; 
+    text-align: center; 
+}
+.two {
+    font-size: 20px; 
+    font-family: monospace; 
+    color: black; 
+    text-align: center;
+}
+
+.bigger {
+    font-size: 70px; 
+    font-family: monospace; 
+    color: black;
+    vertical-align: middle;
 }
 
 img {
@@ -20,4 +40,23 @@ img {
     height: 550px;
     object-fit: cover;
     margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr; /* Two equal columns with a 1px separator */
+    gap: 20px; /* Optional gap between the columns */
   }
+  
+  .column {
+    padding: 20px;
+  }
+  
+  .column:nth-child(odd) {
+    background-color: #f1f1f1; /* Optional: Add a background color to alternating columns */
+  }
+  
+  .column:last-child {
+    border: none; /* Remove the right border from the last column */
+  }
+  
